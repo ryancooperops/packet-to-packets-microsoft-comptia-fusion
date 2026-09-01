@@ -1,14 +1,52 @@
-# CompTIA IT & Security Lab Journal 🛠️🔐
+# Microsoft + CompTIA Fusion Lab
 
-Hey! Welcome to my hands-on learning lab for CompTIA certifications. 
+A technical, portfolio-oriented repository that maps CompTIA foundations to Microsoft security,
+endpoint, networking, cloud, data/AI, and Dynamics 365 concepts.
 
-I’m an IT student building out my personal homelab while prepping for CompTIA exams. Rather than treating these certifications as purely theoretical multiple-choice tests, I use this repository to bridge the gap between exam objectives and actual command-line troubleshooting, packet captures, and system hardening.
+> **Purpose:** demonstrate practical integration patterns, not reproduce exam questions or dumps.
+> Certification status and exam objectives should always be verified against the official vendor
+> documentation before making study or career decisions.
+
+## Tracks
+
+- **Security:** SY0-701 → CAS-005 → SC-900 → SC-401 → MS-102
+- **Endpoint & Support:** 220-1201 → 220-1202 → MD-102
+- **Networking & Infrastructure:** N10-009 → XK0-006 → MS-700
+- **Project / Delivery:** PK0-005 → Microsoft solution delivery concepts
+- **Security Analytics:** CS0-003 → SC-401
+- **Data & AI:** DY0-001 → AB-250
+- **Business Applications:** MB-230 / MB-240 / MB-310 / MB-330 / MB-500 / MB-800
+
+## Repository map
+
+See `docs/ARCHITECTURE.md` for the learning architecture and `docs/EXAM-MAP.md` for the
+source links supplied for this repository.
+
+## Technical components
+
+- Python reference implementations for risk scoring, endpoint posture, network segmentation,
+  incident prioritization, and AI/data pipeline validation.
+- JSON fixtures for repeatable scenarios.
+- Unit tests with `pytest`.
+- GitHub Actions workflow for automated tests.
+- Markdown documentation connecting certification domains to hands-on engineering concepts.
+
+## Quick start
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+pytest -q
+```
+
+## Disclaimer
+
+This is an independent study and engineering portfolio. It is not affiliated with or endorsed
+by CompTIA or Microsoft. No real exam questions, dumps, or confidential materials are included.
 
 ---
-
-## 💡 A Student's Perspective: Building Real Tech Skills
-
-When you first dive into CompTIA material, the alphabet soup of acronyms (DNS, DHCP, SIEM, CIA, NAT, VLAN...) can feel like a completely different language. The secret I discovered? **If you can inspect it in Wireshark or configure it in a VM, you'll never forget it.**
 
 ### My Core Learning Tactics:
 * **CLI Over Memorization**: Don't just memorize what `traceroute` or `netstat` does—run them on your terminal, break your home local network on purpose, and analyze the output!
