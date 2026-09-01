@@ -1,0 +1,15 @@
+{
+  "organization": "Example Enterprise",
+  "scenario": "Secure endpoint-to-business-app workflow",
+  "controls": [
+    "network segmentation",
+    "endpoint posture",
+    "risk prioritization",
+    "data validation"
+  ],
+  "outputs": [
+    "risk score",
+    "posture state",
+    "workflow state"
+  ]
+}
